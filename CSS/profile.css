@@ -1,34 +1,75 @@
 .profile {
-  display: flex;
   align-items: center;
+  display: flex;
   justify-content: space-between;
-  margin: 30px 38px 20px 38px;
+  padding: 10px 38px 10px 38px;
+  margin-top: 16.5px;
 }
 
 .name {
-  margin: 0;
   color: var(--veryDarkGrayishBlue);
   font-weight: 700;
+  margin: 0;
 }
 
 .name__date {
-  transform: translateX(-18px);
   color: var(--desaturatedDarkBlue);
-  
+  transform: translateX(-18px);
 }
 
-.share__button {
+.button {
   background-color: var(--lightGrayishBlue);
-  padding: 10px;
+  border: none;
   border-radius: 50%;
+  height: 30px;
+
+  width: 30px;
 }
 
-.share__button:hover {
+.button:hover {
   cursor: pointer;
 }
 
 .profile__image {
-  width: 40px;
-
   border-radius: 50%;
+  width: 40px;
+}
+
+.share {
+  align-items: center;
+  background-color: var(--veryDarkGrayishBlue);
+  border-radius: 0 0 10px 10px;
+  display: none;
+  justify-content: space-between;
+  padding: 10px 38px 10px 38px;
+
+}
+
+.share p {
+  color: var(--lightGrayishBlue);
+  font-size: .8rem;
+  letter-spacing: .2rem;
+}
+
+.icons img {
+  display: inline;
+  padding: 6px;
+  transform: translateX(-20px);
+}
+
+.button--clicked {
+  background-color: var(--desaturatedDarkBlue);
+  border-radius: 50%;
+  border: none;
+  height: 30px;
+  width: 30px;
+}
+
+.share__button--clicked {
+  filter: brightness(1000%);
+
+}
+
+.share__button--clicked:hover {
+  cursor: pointer;
 }

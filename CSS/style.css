@@ -6,15 +6,11 @@
 }
 
 body {
-
-  font-size: 13px;
-  font-family: "Manrope", sans-serif;
-
   background-color: var(--lightGrayishBlue);
+  font-family: "Manrope", sans-serif;
+  font-size: 13px;
 }
 
 .attribution {
   font-size: 0.5rem;
-
-
 }
