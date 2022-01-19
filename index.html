@@ -1,64 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./CSS/style.css">
-  <link rel="stylesheet" href="./CSS/container.css">
-  <link rel="stylesheet" href="./CSS/image.css">
-  <link rel="stylesheet" href="./CSS/text.css">
-  <link rel="stylesheet" href="./CSS/profile.css">
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="/css/reset.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
 
-  <title>Frontend Mentor | Article preview component</title>
-
-</head>
-<body>
-  <section class="container">
-    <div class="drawer">
-      <img src="./images/drawers.jpg" alt="">
-    </div>
-    <div class="content">
-      <h1 class="title">Shift the overall look and feel by adding these wonderful 
-        touches to furniture in your home</h1>
-      <p class="text">Ever been in a room and felt like something was missing? Perhaps 
-        it felt slightly bare and uninviting. I’ve got some simple tips 
-        to help you make any room feel complete.</p>
-    
-      <div class="profile">
-        <img class="profile__image" src="./images/avatar-michelle.jpg" alt="" class="profile__image">
-        <div class="name__date">
-          <p class="name">Michelle Appleton</p>
-          <div class="date">28 Jun 2020</div>
+    <title>Frontend Mentor | Article preview component</title>
+  </head>
+  <body>
+    <main>
+      <section class="container">
+        <img src="/images/drawers.jpg" alt="" class="img" />
+        <div class="info">
+          <h1 class="info__title">
+            Shift the overall look and feel by adding these wonderful touches to
+            furniture in your home
+          </h1>
+          <p class="info__text">
+            Ever been in a room and felt like something was missing?Perhaps it
+            felt slightly bare and uninviting. I’ve got some simple tips to help
+            you make any room feel complete.
+          </p>
+          <div class="info__profile">
+            <div class="info__data">
+              <img src="/images/avatar-michelle.jpg" alt="" class="info__img" />
+              <div class="info__data-name-date">
+                <p class="info__name">Michelle Appleton</p>
+                <p class="info__date">28 Jun 2020</p>
+              </div>
+            </div>
+            <button class="info__share-btn">
+              <img src="/images/icon-share.svg" alt="" />
+            </button>
+            <button class="info__share-btn-clicked">
+              <img src="/images/icon-share.svg" alt="" />
+            </button>
+          </div>
         </div>
-        <button class="button">
-          <img src="./images/icon-share.svg" alt="" class="share__button">
-        </button>
-      </div>
+      </section>
+    </main>
 
-      <div class="share">
-        <p>SHARE</p>
-        <div class="icons">
-          <img src="./images/icon-facebook.svg" alt="" class="facebook">
-          <img src="./images/icon-twitter.svg" alt="" class="twitter">
-          <img src="./images/icon-pinterest.svg" alt="" class="pinterest">
-        </div>
-        <button class="button--clicked">
-          <img src="./images/icon-share.svg" alt="" class="share__button--clicked">
-        </button>
-      </div>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
     </div>
-  </section>
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-
-  <script src="./script.js"></script>
-</body>
+  </body>
 </html>
