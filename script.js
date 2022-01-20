@@ -6,6 +6,9 @@ const openShareIcons = function () {
     share.style.display = "flex";
   } else {
     share.style.display = "none";
+    document.addEventListener("keydown", function (e) {
+      share.style.display = "none";
+    });
   }
 };
 
