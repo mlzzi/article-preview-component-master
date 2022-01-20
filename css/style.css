@@ -44,6 +44,9 @@ main {
     justify-content: space-between;
     margin-top: 20px;
     align-items: center; }
+  .info__img {
+    height: 40px;
+    border-radius: 50%; }
   .info__data {
     display: flex;
     align-items: center; }
@@ -65,9 +68,36 @@ main {
     border-radius: 50%; }
     .info__share-btn:hover {
       cursor: pointer; }
-  .info__img {
-    height: 40px;
-    border-radius: 50%; }
+
+.social {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  background-color: #48556a;
+  width: 245px;
+  height: 56px;
+  position: absolute;
+  transform: translate(220px, 95px); }
+  .social__icons {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 80%;
+    margin-top: 18px; }
+  .social__share {
+    color: #9eafc2;
+    font-size: 13px;
+    letter-spacing: 4px; }
+  .social__facebook:hover, .social__twitter:hover, .social__pinterest:hover {
+    cursor: pointer; }
+  .social__triangle {
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-top: 20px solid #48556a;
+    transform: translateY(15px); }
 
 .attribution {
   margin-top: -10vh; }
