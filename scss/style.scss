@@ -7,6 +7,12 @@ $light-grayish-blue: hsl(210, 46%, 95%);
   font-family: "Manrope", "sans-serif";
 }
 
+@mixin for-phone-only {
+  @media (max-width: 767.98px) {
+    @content;
+  }
+}
+
 body {
   background-color: $light-grayish-blue;
 }
@@ -20,6 +26,11 @@ main {
 }
 
 .container {
+  @include for-phone-only {
+    flex-direction: column;
+    width: 330px;
+    height: 520px;
+  }
   display: flex;
   background-color: white;
   width: 730px;
@@ -28,6 +39,12 @@ main {
 }
 
 .img {
+  @include for-phone-only {
+    width: 100%;
+    height: 200px;
+    border-radius: 10px 10px 0 0;
+    object-position: 0 25%;
+  }
   height: 100%;
   width: 290px;
   border-radius: 10px 0 0 10px;
@@ -36,11 +53,18 @@ main {
 }
 
 .info {
+  @include for-phone-only {
+    padding: 35px 37px;
+  }
   display: flex;
   flex-direction: column;
   padding: 35px 40px;
 
   &__title {
+    @include for-phone-only {
+      font-size: 16px;
+      line-height: 20px;
+    }
     font-size: 20px;
     font-weight: 700;
     line-height: 25px;
@@ -55,6 +79,10 @@ main {
   }
 
   &__profile {
+    @include for-phone-only {
+      margin-top: 48px;
+      justify-content: space-evenly;
+    }
     display: flex;
     justify-content: space-between;
     margin-top: 20px;
@@ -90,6 +118,7 @@ main {
   &__share-btn {
     border: none;
     background-color: $light-grayish-blue;
+    margin-left: 40px;
     height: 33px;
     width: 33px;
     border-radius: 50%;
@@ -100,6 +129,13 @@ main {
 }
 
 .social {
+  @include for-phone-only {
+    position: absolute;
+    width: 330px;
+    height: 65px;
+    transform: translate(-37px, 219px);
+    border-radius: 0 0 10px 10px;
+  }
   display: none;
   flex-direction: column;
   align-items: center;
@@ -111,6 +147,10 @@ main {
   transform: translate(220px, 95px);
 
   &__icons {
+    @include for-phone-only {
+      justify-content: space-evenly;
+      transform: translateY(-5px);
+    }
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -133,6 +173,9 @@ main {
   }
 
   &__triangle {
+    @include for-phone-only {
+      display: none;
+    }
     width: 0;
     height: 0;
     border-left: 15px solid transparent;
@@ -140,8 +183,32 @@ main {
     border-top: 20px solid $very-dark-grayish-blue;
     transform: translateY(15px);
   }
+
+  &__btn {
+    @include for-phone-only {
+      display: flex;
+      background-color: $desaturated-dark-blue;
+      border: none;
+      width: 33px;
+      height: 33px;
+      border-radius: 50%;
+      margin-left: 40px;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+    display: none;
+  }
+
+  &__share-btn {
+    transform: translate(25%, 60%);
+    filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(0%)
+      brightness(104%);
+  }
 }
 
 .attribution {
-  margin-top: -10vh;
+  margin-top: -6vh;
+  text-align: center;
+  font-size: 12px;
 }

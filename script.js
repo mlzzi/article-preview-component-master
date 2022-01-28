@@ -1,4 +1,5 @@
 const btn = document.querySelector(".info__share-btn");
+const btnTwo = document.querySelector(".social__btn");
 
 const openShareIcons = function () {
   const share = document.querySelector(".social");
@@ -13,3 +14,4 @@ const openShareIcons = function () {
 };
 
 btn.addEventListener("click", openShareIcons);
+btnTwo.addEventListener("click", openShareIcons);
