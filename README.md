@@ -29,8 +29,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/mlzzi/article-preview-component-master)
-- Live Site URL: [Add live site URL here](https://mlzzi.github.io/article-preview-component-master/)
+- Solution URL: [Repository](https://github.com/mlzzi/article-preview-component-master)
+- Live Site URL: [Click Here](https://mlzzi.github.io/article-preview-component-master/)
 
 ## My process
 
@@ -53,5 +53,5 @@ I will continue to use Javascript and as soon I think that I understand it bette
 
 ## Author
 
-- Website - [Add your name here](https://www.linkedin.com/in/muriloluzzi/)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/mlzzi)
+- Website - [Murilo Luzzi](https://www.linkedin.com/in/muriloluzzi/)
+- Frontend Mentor - [@mlzzi](https://www.frontendmentor.io/profile/mlzzi)
