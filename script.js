@@ -3,12 +3,12 @@ const btnTwo = document.querySelector(".social__btn");
 
 const openShareIcons = function () {
   const share = document.querySelector(".social");
-  if (share.style.display === "none") {
-    share.style.display = "flex";
-  } else {
+  if (share.style.display === "flex") {
     share.style.display = "none";
+  } else {
+    share.style.display = "flex";
     document.addEventListener("keydown", function (e) {
-      share.style.display = "none";
+      share.style.display = "flex";
     });
   }
 };
